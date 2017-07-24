@@ -1,0 +1,92 @@
+{
+"src" : {
+"parent" : "",
+"owners" :  ["wolff"], 
+"dependencies" :  []
+},
+"src/main/java" : {
+"parent" : "src/main",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/main/react/todoApp/.idea" : {
+"parent" : "src/main/react/todoApp",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/main/y/z" : {
+"parent" : "src/main/y",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/license" : {
+"parent" : "src",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/test" : {
+"parent" : "src",
+"owners" :  ["cyril"], 
+"dependencies" :  ["src/main"]
+},
+"src/main" : {
+"parent" : "src",
+"owners" :  ["mario","pat"], 
+"dependencies" :  []
+},
+"src/main/react/todoApp/src" : {
+"parent" : "src/main/react/todoApp",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/test/java" : {
+"parent" : "src/test",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/main/react/todoApp/resource" : {
+"parent" : "src/main/react/todoApp",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/main/react/todoApp/.idea/libraries" : {
+"parent" : "src/main/react/todoApp/.idea",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/resources" : {
+"parent" : "src/main/y",
+"owners" :  [], 
+"dependencies" :  ["src/main/y/z"]
+},
+"src/main/react" : {
+"parent" : "src/main",
+"owners" :  [], 
+"dependencies" :  []
+},
+"src/main/react/todoApp" : {
+"parent" : "src/main/react",
+"owners" :  ["rob","micheal","lewis"], 
+"dependencies" :  []
+},
+"src/main/java/Reader" : {
+"parent" : "src/main/java",
+"owners" :  ["vishwas","mike"], 
+"dependencies" :  []
+},
+"src/main/x" : {
+"parent" : "src/main/react",
+"owners" :  ["vettel"], 
+"dependencies" :  ["src/main/react/todoApp"]
+},
+"src/main/python" : {
+"parent" : "src/main/java",
+"owners" :  ["vishwas","rob"], 
+"dependencies" :  ["src/main/java/Reader"]
+},
+"src/main/y" : {
+"parent" : "src/main",
+"owners" :  ["hamilton","alonso"], 
+"dependencies" :  ["src/main/x"]
+}
+}

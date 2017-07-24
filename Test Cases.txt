@@ -1,0 +1,47 @@
+1) owner with no dependencies
+When the file we changed does not have any dependency
+./validate_approvals.sh -approvers mike -changed-files src/main/java/Reader/Reader.java
+Approved
+
+./validate_approvals.sh -approvers vishwas mike -changed-files src/main/java/Reader/Reader.java
+Approved
+
+./validate_approvals.sh -approvers alonso -changed-files src/main/java/Reader/Reader.java
+Insufficient approvals
+
+2) no owners and no dependency
+When the file we changed does not have any dependency or owners, it should use the parent's owners
+
+./validate_approvals.sh -approvers wolff -changed-files src/license/dummyLicense.txt
+Approved
+
+./validate_approvals.sh -approvers vettel -changed-files src/license/dummyLicense.txt
+Insufficient approvals
+
+3) owners with one dependency
+When the file we changed has one dependency
+
+./validate_approvals.sh -approvers rob -changed-files src/main/python/Challenge.py
+Insufficient approvals
+
+./validate_approvals.sh -approvers vishwas -changed-files src/main/python/Challenge.py
+Approved
+
+./validate_approvals.sh -approvers rob mike -changed-files src/main/python/Challenge.py
+Approved
+
+4) No owner but there is a dependency
+
+./validate_approvals.sh -approvers wolff alonso -changed-files src/resources/dummyLib.txt
+Approved
+
+./validate_approvals.sh -approvers wolff -changed-files src/resources/dummyLib.txt
+Insufficient approvals
+
+5) Owners present and 3 level dependency
+
+./validate_approvals.sh -approvers rob vettel alonso -changed-files src/main/y/dummy.txt
+Approved
+
+./validate_approvals.sh -approvers rob vettel lewis -changed-files src/main/y/dummy.txt
+Insufficient approvals
