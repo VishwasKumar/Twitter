@@ -2,6 +2,7 @@
 
 This project replicates the mono repo twitter uses, so the source code for all projects as well as the 
 Approval tool sits in the same code base. The project uses gradle as a build manager.
+`Twitter_master` is the root folder and all commands mentioned below should be executed from the root. 
 
 **Usage:**
 
